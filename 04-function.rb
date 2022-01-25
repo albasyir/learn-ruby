@@ -9,3 +9,4 @@ def exampleWithParam(anything)
 end 
 
 exampleWithParam("Param!")
+exampleWithParam "Param!"
