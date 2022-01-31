@@ -16,3 +16,6 @@ My First Testing of Ruby
 
 - https://github.com/postmodern/chruby
 - https://github.com/postmodern/ruby-install
+
+## Note
+https://longliveruby.com/articles/ruby-mixins-prepend-extend-include

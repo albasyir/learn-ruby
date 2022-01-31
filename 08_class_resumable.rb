@@ -1,6 +1,10 @@
 module Greeting
   def hello
-    puts 'Hai from module'
+    'Hai from module'
+  end
+
+  def say(script)
+    script
   end
 end
 
@@ -8,18 +12,18 @@ class MyClass
   include Greeting
 
   def hello
-    puts 'Hai from my class'
+    'Hai from my class'
   end
 end
 
 # Greeting will show as list here
 print MyClass.ancestors
 
-class Object
-  def bye
-    puts 'bye bye from object'
-  end
-end
+puts ''
+puts '========================'
+puts MyClass.new.hello                        # From Class, Module Will Ignored
+puts MyClass.new.say('Good Morning')    # From Module
+
 
 
 
