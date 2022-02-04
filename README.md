@@ -6,13 +6,15 @@ My First Testing of Ruby
 
 - [x] Basic : variable, operator
 - [x] Flow Control: if
-- [x] Flow Control: for, each, while, do-while
-- [ ] Flow Control: throw, try-catch, try-catch-finally
-- [ ] Pattern: Class, Extend, Include, Prepared
-- [x] Pattern: Function
-- [ ] Pattern: Callback
+- [x] Flow Control: looping
+- [x] Flow Control: throw, try-catch, try-catch-finally
+- [x] Flow Control: thread and await
+- [x] Pattern: class, extend, include, prepared
+- [x] Pattern: function
+- [ ] Pattern: lambda
+- [ ] Scaffolding: Use Gem
 
-## Ruby Verison Manager
+## Ruby Version Manager
 
 - https://github.com/postmodern/chruby
 - https://github.com/postmodern/ruby-install
