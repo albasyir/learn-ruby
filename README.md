@@ -8,7 +8,7 @@ My First Testing of Ruby
 - [x] Flow Control: if
 - [x] Flow Control: looping
 - [x] Flow Control: throw, try-catch, try-catch-finally
-- [x] Flow Control: thread and await
+- [x] Flow Control: thread
 - [x] Pattern: class, extend, include, prepared
 - [x] Pattern: function
 - [x] Pattern: lambda
