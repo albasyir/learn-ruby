@@ -11,7 +11,8 @@ My First Testing of Ruby
 - [x] Flow Control: thread and await
 - [x] Pattern: class, extend, include, prepared
 - [x] Pattern: function
-- [ ] Pattern: lambda
+- [x] Pattern: lambda
+- [x] Pattern: yield
 - [ ] Scaffolding: Use Gem
 
 ## Ruby Version Manager
