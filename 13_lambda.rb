@@ -1,24 +1,25 @@
-example1 = lambda { puts "This is a lambda without parameters" }
-example1.call(1)
-example1.()
-example1.[]
-example1.===
+# frozen_string_literal: true
 
-example2 = -> { puts "This is a lambda without parameters" }
-example2.call
+# basic
+lambda = lambda { puts 'This is a lambda without parameters' }
 
-example3 = lambda { |x, y| puts "This is a lambda with parameter #{x} and #{y}" }
-example3.call(1, 2)
+# there are ways to call lambda
+lambda.call
+lambda.()
+lambda.[]
+lambda.===
 
+lambda_with_params = lambda { |x, y| puts "This is a lambda with parameter #{x} and #{y}" }
+lambda_with_params.call(1, 2)
 
+lambda_arrow = -> { puts 'This is a lambda without parameters' }
+lambda_arrow.call
 
-# example3 = Proc.new {
-#   puts "This is a proc"
-# }
-# example3.call
-#
-# example4 = Proc.new { |x, y|
-#   puts "This is a proc with argument #{x} and #{y}"
-# }
+lambda_arrow_with_params = ->(x, y) { puts "This is a lambda with parameter #{x} and #{y}" }
+lambda_arrow_with_params.call(1, 2)
 
-example4.call(10, 15)
+lambda_with_block = lambda do |x, y|
+  puts "This is a lambda with parameter #{x} and #{y}"
+  puts 'This is a block'
+end
+lambda_with_block.call(1, 2)
