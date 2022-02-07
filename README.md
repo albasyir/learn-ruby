@@ -13,7 +13,7 @@ My First Testing of Ruby
 - [x] Pattern: function
 - [x] Pattern: lambda
 - [x] Pattern: yield
-- [ ] Scaffolding: Use Gem
+- [x] Scaffolding: Use Gem
 
 ## Ruby Version Manager
 
