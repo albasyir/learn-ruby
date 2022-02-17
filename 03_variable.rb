@@ -18,3 +18,9 @@ puts 'That\'s right'
 
 this_local_variable = 'This is a local variable'
 THIS_CONSTANT_VARIABLE = 'This is a constant variable'
+
+arrayExample = [1, 2, 3, 4, 5]
+hashesExample = {
+  'name' => 'Aziz',
+  'age' => '23'
+}

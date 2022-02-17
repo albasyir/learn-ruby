@@ -1,52 +1,39 @@
-# frozen_string_literal: true
+class Mortal
+  def initialize(life)
+    @life = life
+  end
 
-# Human Activity
-module Activity
-  def sleep(condition)
-    puts 'sleeping' if condition == true
+  def life?
+    @life
+  end
 
-    @sleep = condition
+  def die!
+    @life = false
+  end
+
+  def eat(food)
+    @food = food
+  end
+
+  def food?
+    @food
+  end
+
+  private :die!, :food?
+  protected :eat
+end
+
+class Human < Mortal
+  def eat(food)
+    super(food) if food == 'bread'
+  end
+
+  def lastEaten
+    food? ? 'bread' : 'nothing'
   end
 end
 
-# interact
-module Actions
-  def seeing
-    puts 'seeing'
-
-    # just call super for making up Human object
-    super
-  end
-end
-
-# Basic Human Function
-class Human
-  # will attach to class before object created
-  prepend Actions
-
-  # will attach to class after object created
-  include Activity
-
-  # will be called after class called
-  def initialize(name)
-    # set attribute
-    @name = name
-  end
-
-  # normal function
-  def say_your_name
-    puts "My name is #{@name}"
-  end
-end
-
-# puts Human.instance_methods
-# see all method that already registered
-puts Human.instance_methods(false)
-puts '====='
-puts Human.ancestors
-puts '====='
-
-Aziz = Human.new('Aziz')
-Aziz.say_your_name
-Aziz.sleep(true)
-
+aziz = Human.new(true)
+aziz.eat('bread')
+puts aziz.life?
+puts aziz.lastEaten
